@@ -50,7 +50,7 @@ function playCallback() {
 
     const computerChoice= computerPlay();
     divComputerChoice.id= computerChoice;
-    const computerImgSrc= computerChoice==='paper'?'/images/icon-paper.svg' :computerChoice==='scissors'? "/images/icon-scissors.svg" :"/images/icon-rock.svg";
+    const computerImgSrc= computerChoice==='paper'?'images/icon-paper.svg' :computerChoice==='scissors'? "images/icon-scissors.svg" :"images/icon-rock.svg";
 
     imgComputerChoice.src= computerImgSrc;
 
@@ -97,7 +97,7 @@ rock.addEventListener('click', ()=>{
    
      let computerChoice = playCallback();
     divPlayerChoice.id= 'rock';
-    imgPlayerChoice.src="./images/icon-rock.svg";
+    imgPlayerChoice.src="images/icon-rock.svg";
     let resultCode = playRound('rock', computerChoice);
     result.textContent='';
     desktopResult.textContent='';
@@ -109,7 +109,7 @@ rock.addEventListener('click', ()=>{
 paper.addEventListener('click', ()=>{
     let computerChoice = playCallback();
     divPlayerChoice.id= 'paper';
-    imgPlayerChoice.src="/images/icon-paper.svg";
+    imgPlayerChoice.src="images/icon-paper.svg";
     let resultCode = playRound('paper', computerChoice);
     result.textContent='';
     desktopResult.textContent='';
@@ -121,7 +121,7 @@ paper.addEventListener('click', ()=>{
 scissors.addEventListener('click', ()=>{
     let computerChoice = playCallback();
     divPlayerChoice.id= 'scissors';
-    imgPlayerChoice.src="/images/icon-scissors.svg";
+    imgPlayerChoice.src="images/icon-scissors.svg";
     let resultCode = playRound('scissors', computerChoice);
     result.textContent='';
     desktopResult.textContent='';
